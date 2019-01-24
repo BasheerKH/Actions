@@ -1,6 +1,7 @@
 import { EventsService } from './../Service/events.service';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatSort, MatPaginator, MatTableDataSource } from '@angular/material';
+import { MatPaginator, MatTableDataSource } from '@angular/material';
+import { MatSort } from '@angular/material';
 
 
   // @Component({
@@ -28,7 +29,7 @@ import { MatSort, MatPaginator, MatTableDataSource } from '@angular/material';
     selector: 'app-event-list',
     templateUrl: './event-list.component.html',
     styleUrls: ['./event-list.component.css']
-  })
+  });
 export class EventListComponent implements OnInit {
   @ViewChild(MatSort) sort: MatSort;
   @ViewChild(MatPaginator) paginator: MatPaginator;
@@ -52,3 +53,7 @@ _Error: String = 'Error';
   }
 
 }
+function newFunction() {
+  ;
+}
+
